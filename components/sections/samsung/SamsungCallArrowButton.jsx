@@ -7,7 +7,7 @@ const SamsungCallArrowButton = () => {
       className="flex items-center rounded-3xl justify-end gap-2 bg-black"
       onClick={() => window.open(`tel:${phoneNumber}`)}
     >
-      <span className=" text-white px-5 p-1 ">Call</span>
+      <span className=" text-white px-5 p-1 text-xs ">Call</span>
     </button>
   );
 };
