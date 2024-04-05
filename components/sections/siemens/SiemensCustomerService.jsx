@@ -26,16 +26,16 @@ export default function SiemensCustomerService() {
         </div>
       </div>
       <div className="mt-5 flex select-none justify-center md:mt-10">
-        <div className=" flex w-full max-w-[80rem] flex-col gap-5  items-center justify-between px-5 md:flex-row-reverse md:px-7  lg:px-5 ">
+        <div className=" flex w-full max-w-[80rem] flex-col items-center  justify-between gap-5 px-5 md:flex-row-reverse md:px-7  lg:px-5 ">
           <div className="justify-centermd:w-2/5  flex flex-col items-center text-center md:items-start md:text-start ">
             <h2 className="text-wrap text-2xl font-thin  sm:text-3xl  md:text-4xl   md:leading-[3rem]">
               Contact Us:
             </h2>
-            <span className=" mt-3 text-wrap text-start text-sm text-[#a3acbd] sm:text-base pb-10">
-            You can call us directly to help you with any issue you may have with your product. our official distributor in UAE.
+            <span className=" mt-3 text-wrap pb-10 text-start text-sm text-[#a3acbd] sm:text-base">
+              You can call us directly to help you with any issue you may have
+              with your product. our official distributor in UAE.
             </span>
             <SiemensBannerCallButton />
-
           </div>
           <Image
             className=" mt-5 w-full  shrink-0 md:w-1/2  "
