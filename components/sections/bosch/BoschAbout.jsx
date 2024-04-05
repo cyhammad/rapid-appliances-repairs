@@ -3,23 +3,25 @@ import Image from "next/image";
 
 const BoschAboutSection = () => {
   return (
-    <div className="flex select-none justify-center bg-[#ffffff] mt-10  ">
-    <div className=" flex md:flex-row flex-col w-full max-w-[80rem]  justify-between items-center">
-        <div className="md:w-3/5  flex  flex-col xl:px-0 md:px-7 px-5  justify-center ">
-          <h2 className="text-3xl font-semibold text-lg-text  text-wrap">About Us</h2>
-          <span className=" text-sm text-lg-text mt-3 sm:text-base">
+    <div className="relative mt-10 flex select-none justify-center bg-[#ffffff] md:h-[70vh]">
+      <div className=" flex w-full max-w-[80rem] flex-col items-center justify-between md:flex-row md:px-3">
+        <div className="flex  flex-col  justify-center px-5 md:w-3/5 md:px-7  xl:px-0 ">
+          <h2 className="text-wrap text-3xl font-semibold  text-lg-text">
+            About Us
+          </h2>
+          <span className=" mt-3 text-sm text-lg-text sm:text-base">
             {aboutContent}
           </span>
         </div>
         <Image
-          className=" md:w-[40%] w-full pt-5 shrink-0  "
+          className="w-full shrink-0 pt-5 md:absolute md:right-0 md:w-[40%]"
           src="/bosch/aboutUs.jpeg"
           width={480}
           height={200}
           alt="image"
         />
+      </div>
     </div>
-  </div>
   );
 };
 
