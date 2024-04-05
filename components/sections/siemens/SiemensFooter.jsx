@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SiemensFooter = () => {
   return (
-    <div className="flex justify-center border-t border-white/25">
+    <div className="flex justify-center border-t bg-[#2B2F42] border-white/25">
       <footer className="flex w-full max-w-[78rem] flex-col gap-y-5 px-5 py-10">
         <h1 className="text-2xl font-medium">Siemens Repair Center</h1>
         <span className="text-sm font-light text-white/50">
