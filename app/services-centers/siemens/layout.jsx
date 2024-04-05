@@ -1,0 +1,22 @@
+import FixedCallButtons from "@/components/buttons/FixCallButtons";
+import SiemensFixedContactButton from "@/components/sections/siemens/SiemensFixedContactButton";
+import SiemensFooter from "@/components/sections/siemens/SiemensFooter";
+import SiemensHeader from "@/components/sections/siemens/SiemensHeader";
+
+export const metadata = {
+  title: "Siemens Repair Center | Appliances Repairs UAE",
+  description: "Best home appliance repair service in Dubai and Abu Dhabi",
+};
+
+const SiemensLayout = ({ children }) => {
+  return (
+    <body className="flex flex-col bg-siemens-bg text-white">
+      <SiemensHeader />
+      {children}
+      <SiemensFooter />
+      <FixedCallButtons />
+    </body>
+  );
+};
+
+export default SiemensLayout;
