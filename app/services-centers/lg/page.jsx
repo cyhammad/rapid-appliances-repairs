@@ -9,9 +9,9 @@ const LgServiceCenterPage = () => {
   return (
     <div>
       <LgBanner />
-      <LgServices />
-      <LgCustomerService/>
       <LgAbout />
+      <LgCustomerService />
+      <LgServices />
     </div>
   );
 };

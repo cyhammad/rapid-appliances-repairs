@@ -8,9 +8,9 @@ const BoschServiceCenterPage = () => {
   return (
     <div>
       <BoschBanner />
+      <BoschAboutSection />
+      <BoschCustomerService />
       <BoschServices />
-      <BoschCustomerService/>
-      <BoschAboutSection/>
     </div>
   );
 };
