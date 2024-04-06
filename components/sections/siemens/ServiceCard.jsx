@@ -13,7 +13,7 @@ const ServiceCard = ({ imageUrl, heading, description }) => {
         alt="image"
       />
       <div className="flex flex-col items-center justify-center  gap-y-5 px-2 pb-7 pt-5 text-center">
-        <h1 className="text-xl">{heading}</h1>
+        <h1 className="text-xl font-semibold">{heading}</h1>
         <span className="max-w-[34rem] text-xs text-[#a3acbd]">
           {description}
         </span>

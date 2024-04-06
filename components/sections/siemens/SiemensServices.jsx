@@ -8,7 +8,7 @@ const SiemensServices = () => {
     <div className="flex justify-center py-20">
       <div className="flex max-w-[80rem] flex-col gap-y-10 px-5 sm:px-7 lg:px-5 ">
         <div className="flex flex-col gap-y-5">
-          <h2 className="text-wrap text-2xl font-thin  sm:text-3xl  md:max-w-[25rem] md:text-4xl  md:leading-[3rem]">
+          <h2 className="text-wrap text-2xl font-semibold sm:text-3xl  md:max-w-[25rem] md:text-4xl  md:leading-[3rem]">
             Professional Services{" "}
           </h2>
           <span className="font-light">Our professional services include:</span>
