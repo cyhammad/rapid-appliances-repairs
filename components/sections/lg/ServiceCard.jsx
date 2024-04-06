@@ -2,7 +2,7 @@
 const ServiceCard = ({ imageUrl, heading, description }) => {
   return (
      <div
-      className="flex  transition-transform duration-300 transform hover:scale-95 flex-col justify-end   bg-cover bg-center  bg-no-repeat hover:bg-[#c2c4c4] h-[430px]"
+      className="flex  transition-transform duration-300 transform hover:scale-95 flex-col justify-end   bg-cover bg-center  bg-no-repeat hover:bg-[#c2c4c4] h-[490px]"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <div className="grad flex text-center flex-col gap-y-5  bg-gradient-to-t from-black p-5 text-white sm:p-9 sm:pb-10 pb-10 ">

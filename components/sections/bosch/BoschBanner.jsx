@@ -6,18 +6,20 @@ import BoschWhatsappButton from "./BoschWhatsappButton";
 
 const BoschBanner = () => {
   return (
-    <div className="relative z-0 h-[450px] w-full bg-[url('/bosch/bosch.webp')] bg-cover bg-no-repeat text-white sm:h-screen">
-      <div className="absolute inset-0 flex justify-center bg-black/60">
-        <div className="flex max-w-[78rem] flex-col justify-center gap-y-10 pt-14 sm:pt-0 px-5 sm:px-7 md:px-10 xl:px-0">
-          <h2 className="text-2xl md:w-2/3 md:text-3xl lg:text-5xl lg:leading-[4rem]">
+    <div className="relative">
+      <div className="bg-ata absolute inset-0 bg-[url('/bosch/bosch.webp')] bg-cover bg-fixed bg-[78%] bg-no-repeat"></div>
+      <div className="relative z-10 flex h-[63vh] items-center justify-center bg-black/60 text-white md:h-screen">
+        <div className="flex max-w-[78rem] flex-col justify-center gap-y-10 px-5 sm:px-7 md:px-10 xl:px-0">
+          <h2 className="text-2xl font-semibold md:w-2/3 md:text-3xl lg:text-5xl lg:leading-[4rem]">
             Introducing the best Bosch appliance repair services.
           </h2>
           <span className="text-sm sm:w-2/3 lg:leading-[1.75rem]">
+            {" "}
             With our extensive knowledge, expertise, and commitment to customer
             satisfaction. We are dedicated to providing you with the highest
             quality repairs.
           </span>
-          <div className="sm:mt-10 flex flex-wrap gap-2">
+          <div className="flex flex-col gap-2 sm:flex-row">
             <BoschCallButton2 />
             <BoschWhatsappButton />
           </div>

@@ -1,13 +1,13 @@
-'use client'
+"use client";
 import { phoneNumber } from "@/utils/phoneNumber";
 
 const SamsungCallArrowButton = () => {
   return (
     <button
-      className="flex items-center rounded-3xl justify-end gap-2 bg-black"
+      className="bg-blac bg-primary  hover:bg-primary-focus flex items-center justify-end gap-2 rounded bg-black px-6 py-2 text-white shadow-md duration-150"
       onClick={() => window.open(`tel:${phoneNumber}`)}
     >
-      <span className=" text-white px-5 p-1 text-xs ">Call</span>
+      Call
     </button>
   );
 };

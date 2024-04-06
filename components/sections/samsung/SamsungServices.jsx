@@ -9,29 +9,6 @@ const SamsungServices = () => {
             Which service interest you?
           </h1>
           <span className="font-light">Our professional services include:</span>
-          <div className="flex max-w-7xl flex-wrap gap-4">
-            <span className="rounded-full border border-[#d7dadb] bg-[#eff1f2] px-5 py-2 text-sm hover:bg-[#c2c4c4]">
-              Washing Machine Repair
-            </span>
-            <span className="rounded-full border border-[#d7dadb]  bg-[#eff1f2] px-5 py-2 text-sm hover:bg-[#c2c4c4]">
-              Refrigerator Repair
-            </span>
-            <span className="rounded-full border border-[#d7dadb]  bg-[#eff1f2] px-5 py-2 text-sm hover:bg-[#c2c4c4]">
-              TV Repair
-            </span>
-            <span className="rounded-full border border-[#d7dadb]  bg-[#eff1f2] px-5 py-2 text-sm hover:bg-[#c2c4c4]">
-              Stove / Cooker Repair
-            </span>
-            <span className="rounded-full border border-[#d7dadb]  bg-[#eff1f2] px-5 py-2 text-sm hover:bg-[#c2c4c4]">
-              Dishwasher Repair
-            </span>
-            <span className="rounded-full border border-[#d7dadb]  bg-[#eff1f2] px-5 py-2 text-sm hover:bg-[#c2c4c4]">
-              Dryer Repair
-            </span>
-            <span className="rounded-full border border-[#d7dadb]  bg-[#eff1f2] px-5 py-2 text-sm hover:bg-[#c2c4c4]">
-              Gas Oven Repair
-            </span>
-          </div>
         </div>
         <div className="grid gap-10 sm:px-5 md:grid-cols-3  lg:grid-cols-4 2xl:px-0">
           <ServiceCard
