@@ -7,6 +7,7 @@ import AboutSection from "@/components/sections/home/AboutSection";
 import ServicesSection from "@/components/sections/home/ServicesSection";
 import OurMissionSection from "@/components/sections/home/OurMissionSection";
 import Footer from "@/components/sections/home/Footer";
+import FixedCallButtons from "@/components/buttons/FixCallButtons";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <ServicesSection />
       <OurMissionSection />
       <Footer />
+      <FixedCallButtons />
     </body>
   );
 }

@@ -21,13 +21,14 @@ const ServicesSection = () => {
           practices, we deliver efficient and effective services that exceed
           customer expectations.
         </span>
-        <div className="mt-10 flex justify-center flex-wrap">
+        <div className="mt-10 flex flex-wrap justify-center">
           <ServiceCard
             iconImgPath={"/home/repair-person.svg"}
             heading={"Washing Machine"}
             description={
               "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"washing-machine"}
           />
           <ServiceCard
             iconImgPath={"/home/repair-person.svg"}
@@ -35,6 +36,7 @@ const ServicesSection = () => {
             description={
               "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"dryer"}
           />
           <ServiceCard
             iconImgPath={"/home/repair-person.svg"}
@@ -42,6 +44,7 @@ const ServicesSection = () => {
             description={
               "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"stove-cooker"}
           />
           <ServiceCard
             iconImgPath={"/home/repair-person.svg"}
@@ -49,6 +52,7 @@ const ServicesSection = () => {
             description={
               "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"refrigerator"}
           />
           <ServiceCard
             iconImgPath={"/home/repair-person.svg"}
@@ -56,6 +60,7 @@ const ServicesSection = () => {
             description={
               "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"television"}
           />
           <ServiceCard
             iconImgPath={"/home/repair-person.svg"}
@@ -63,6 +68,7 @@ const ServicesSection = () => {
             description={
               "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"gas-oven"}
           />
           <ServiceCard
             iconImgPath={"/home/repair-person.svg"}
@@ -70,6 +76,7 @@ const ServicesSection = () => {
             description={
               "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"dishwasher"}
           />
         </div>
       </div>

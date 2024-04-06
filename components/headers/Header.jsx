@@ -13,7 +13,7 @@ const Header = () => {
     <div className="flex h-24 w-full items-center justify-center">
       <div className="flex w-full max-w-7xl items-center justify-between px-5">
         <div className="flex items-center gap-x-1">
-          <Image src="logo.svg" width={50} height={50} alt="LOGO" />
+          <Image src="/logo.svg" width={50} height={50} alt="LOGO" />
           <div className="flex flex-col justify-between px-2">
             <span className="text-3xl font-bold uppercase">Rapid</span>
             <span className="text-xs uppercase text-black/30">
