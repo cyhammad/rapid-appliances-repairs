@@ -4,7 +4,6 @@ import Link from "next/link";
 const BoschFooter = () => {
   return (
     <footer className="flex justify-center bg-[#2D3033] text-white">
-      <div className="top-75 absolute left-0 z-40 h-[0.35rem] w-full bg-[url('/bosch/shape_horizontal.svg')] bg-cover bg-center bg-no-repeat"></div>
       <div className="mt-5 flex w-full max-w-[78rem] flex-col gap-y-5 px-5 py-10">
         <div className="flex items-center gap-2">
           <Link

@@ -10,7 +10,7 @@ export const metadata = {
 
 const SiemensLayout = ({ children }) => {
   return (
-    <body className="flex flex-col bg-siemens-bg text-white">
+    <body className="flex flex-col text-black">
       <SiemensHeader />
       {children}
       <SiemensFooter />
