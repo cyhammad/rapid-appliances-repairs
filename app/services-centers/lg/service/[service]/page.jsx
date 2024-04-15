@@ -1,5 +1,7 @@
 "use client";
 
+import SamsungBannerCallButton from "@/components/sections/samsung/SamsungBannerCallButton";
+import SamsungWhatsappButton from "@/components/sections/samsung/SamsungWhatsappButton";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -34,10 +36,10 @@ const ServicePage = ({ params }) => {
                   ? "Television"
                   : "Unknown";
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col items-center justify-center gap-y-5 bg-yellow-300 py-28 text-[#071125]">
+    <div className="mt-10 flex flex-col">
+      <div className="flex flex-col items-center justify-center gap-y-5 bg-white py-28 text-[#071125]">
         <span className="text-4xl font-bold">{service}</span>
-        <span className="text-center">Home / {service}</span>
+        <span className="text-center">Siemens / Services / {service}</span>
       </div>
       <div className="flex justify-center">
         <div className="grid w-full max-w-7xl grid-cols-2 gap-x-14 px-5 py-10">
@@ -72,10 +74,12 @@ const ServicePage = ({ params }) => {
             <span className="text-">
               We specialize in handling a diverse range of {service} brands and
               models, offering comprehensive solutions tailored to your specific
-              needs. Whether it's a minor adjustment or a major overhaul, our
-              expert technicians are equipped to deliver reliable and
-              cost-effective washing machine services.
+              needs.
             </span>
+            <div className="flex flex-col gap-2 sm:flex-row">
+              <SamsungBannerCallButton />
+              <SamsungWhatsappButton />
+            </div>
           </div>
         </div>
       </div>
