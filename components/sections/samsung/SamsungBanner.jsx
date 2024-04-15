@@ -1,19 +1,29 @@
-import SamsungBannerCallButton from "./SamsungBannerCallButton";
-import SamsungWhatsappButton from "./SamsungWhatsappButton";
+import { Pacifico } from "next/font/google";
+import Image from "next/image";
+import SamsungBannerCallButton from "../samsung/SamsungBannerCallButton";
+import SamsungWhatsappButton from "../samsung/SamsungWhatsappButton";
+
+const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 
 const SamsungBanner = () => {
   return (
-    <div className="relative">
-      <div className="absolute inset-0 bg-[url('/samsung/samsung-bg.avif')] bg-cover bg-fixed bg-[55%] bg-no-repeat sm:bg-[78%] "></div>
-      <div className="relative z-10 flex h-[63vh] items-center justify-center md:h-screen">
-        <div className="flex max-w-[78rem] flex-col justify-center gap-y-10 px-5 sm:px-7 md:px-10 xl:px-0">
-          <h2 className="text-2xl font-semibold md:w-2/3 md:text-3xl lg:text-5xl lg:leading-[4rem]">
-            Samsung Service Center: Bringing you the best home appliance repair
-            services
-          </h2>
-          <span className="text-sm sm:w-2/3 lg:leading-[1.75rem]">
-            When it comes to repairing your home appliances, you need a
-            technician you can trust to deliver exceptional service.
+    <div className="relative flex justify-center overflow-hidden bg-[#eff1f2]">
+      <div className="w-full max-w-7xl px-5 py-14 md:py-20">
+        <div className="flex flex-col gap-y-3 lg:max-w-[50%] xl:max-w-[550px]">
+          <span
+            className={`text-2xl font-extrabold text-gray-400 sm:text-3xl ${pacifico.className}`}
+          >
+            We Provide ...
+          </span>
+          <span className="text-5xl font-extrabold sm:text-6xl">
+            Authorized Bosch Appliances Repair Services
+          </span>
+          <span className="mt-5 text-3xl font-bold">
+            Same day service Guaranteed
+          </span>
+          <span className="mt-5 text-xl">
+            We provide the best appliance services in Dubai and Abu Dhabi from
+            Samsung home appliances.
           </span>
           <div className="flex flex-col gap-2 sm:flex-row">
             <SamsungBannerCallButton />
@@ -21,6 +31,15 @@ const SamsungBanner = () => {
           </div>
         </div>
       </div>
+      <div className="absolute left-5 top-44 -z-10 h-28 w-28 rounded-full bg-yellow-300/70"></div>
+      <div className="absolute -right-44 top-96 -z-10 h-80 w-80 rounded-full bg-blue-900/85 md:-left-44"></div>
+      <Image
+        src="/home/washing-machine-repair.png"
+        width={700}
+        height={1000}
+        alt="washing machine repair"
+        className="absolute right-0 top-0 z-0 hidden xl:block"
+      />
     </div>
   );
 };

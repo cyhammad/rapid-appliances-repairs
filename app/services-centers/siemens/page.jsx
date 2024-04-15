@@ -12,7 +12,7 @@ import SiemensServices from "@/components/sections/siemens/SiemensServices";
 const SiemensServiceCenterPage = () => {
   return (
     <div className="my-20 flex flex-col">
-      <MainBanner />
+      <SiemensBanner />
       <QualitySection />
       <AboutSection />
       <ServicesSection />

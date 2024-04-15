@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const LgFooter = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center bg-white">
       <footer className="flex w-full max-w-7xl flex-col gap-y-5 px-5 pb-10 text-[#707070]">
         <div className="mt-5 flex  items-center gap-2">
           <Link

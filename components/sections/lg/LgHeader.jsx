@@ -14,7 +14,7 @@ const LgHeader = () => {
   };
 
   return (
-    <header className="fixed z-50 flex w-full items-center justify-center border border-b-[#00000033] bg-lg-bg text-lg-text drop-shadow-sm ">
+    <header className="fixed z-50 flex w-full items-center justify-center bg-white text-lg-text drop-shadow-sm ">
       <div className=" flex h-20 w-full max-w-[93rem] items-center gap-12 px-5 sm:px-7 md:px-10 ">
         <Link
           href="/services-centers/siemens"

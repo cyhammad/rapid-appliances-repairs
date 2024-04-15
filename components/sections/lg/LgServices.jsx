@@ -7,83 +7,81 @@ import LgCustomerService from "./LgCustomerService";
 
 const LgServices = () => {
   return (
-    <div className="mt-6 flex flex-col items-center justify-center py-5 md:py-10">
-      <div className="flex max-w-[93rem] flex-col gap-y-10 px-5 sm:px-10 lg:px-10 2xl:px-0">
-        <div className="flex flex-col gap-y-5">
-          <h1 className="text-center text-3xl font-medium text-lg-text md:text-5xl lg:text-4xl">
-            Repair Services for LG Products
-          </h1>
-          <p className=" text-center font-medium text-lg-text">
-            Expert technicians dedicated to restoring your LG devices to peak
-            performance.
-          </p>
+    <div className="flex justify-center rounded-[3rem] bg-white mt-5">
+      <div className="flex w-full max-w-7xl flex-col gap-y-5 px-5 py-20">
+        <div className="flex items-center gap-x-1">
+          <Image src="/home/line.svg" width={25} height={25} alt="line" />
+          <span className="text-sm font-semibold uppercase text-[#285EB2]">
+            Our Services
+          </span>
         </div>
-        <div className="mt-10 grid gap-10 sm:gap-6 sm:px-5 md:grid-cols-2 lg:grid-cols-3 2xl:px-0">
+        <span className="text-[2.5rem] font-extrabold leading-[3.0rem]">
+          What We Do For Our Customers
+        </span>
+        <span className="font-light text-black/80">
+          Through our commitment to organic growth, we continuously evolve our
+          approach to appliance repairs, staying agile in response to changing
+          market demands. By integrating disruptive innovations into our
+          practices, we deliver efficient and effective services that exceed
+          customer expectations.
+        </span>
+        <div className="grid gap-10 sm:px-5 md:grid-cols-3 lg:grid-cols-4 2xl:px-0">
           <ServiceCard
-            imageUrl={"/lg/hi.avif"}
+            imageUrl={"/samsung/washingMachine.avif"}
             heading={"Washing Machine Repair"}
             description={
               "Delivering top-tier, professional solutions that guarantee the optimal performance of your washing machine."
             }
+            id={"washing-machine"}
           />
           <ServiceCard
-            imageUrl={"/lg/ref.jpeg"}
+            imageUrl={"/samsung/ref.webp"}
             heading={"Refrigerator Repair"}
             description={
               "Whether it's a noisy compressor, a torn gasket, or a sealed door issue causing your refrigerator not to freeze properly."
             }
+            id={"refrigerator"}
           />
           <ServiceCard
-            imageUrl={"/lg/lg.webp"}
+            imageUrl={"/samsung/tv.webp"}
             heading={"Television Repair"}
             description={
               "Our professional TV repair service provides expert diagnostics and precise repairs ensuring optimal functionality."
             }
+            id={"television"}
           />
           <ServiceCard
-            imageUrl={"/lg/stove.webp"}
+            imageUrl={"/samsung/stove.webp"}
             heading={"Stove/Cooker Repair"}
             description={
               "We offer fast and efficient repairs for all types of stoves and cookers. We only use high quality replacement part."
             }
+            id={"stove-cooker"}
           />
           <ServiceCard
-            imageUrl={"/lg/dsih.avif"}
+            imageUrl={"/samsung/dishwasher.avif"}
             heading={"Dishwasher Repair"}
             description={
-              "We resolve common issues such as leaks, poor cleaning and unusual noises to ensure  efficient cleaning."
+              "We resolve common issues such as leaks, poor cleaning and unusual noises to ensure a spotless and efficient cleaning."
             }
+            id={"dishwasher"}
           />
           <ServiceCard
-            imageUrl={"/oven.webp"}
+            imageUrl={"/samsung/oven.webp"}
             heading={"Gas Oven Repair"}
             description={
               "Issues like temperature inconsistencies, ignition problems, gas leaks are resolved by our professionals."
             }
+            id={"gas-oven"}
           />
           <ServiceCard
-            imageUrl={"/lg/hi.avif"}
+            imageUrl={"/samsung/washingMachine.avif"}
             heading={"Dryer Repair"}
             description={
               "Delivering top-tier, professional solutions that guarantee the optimal performance of your Dryer."
             }
+            id={"dryer"}
           />
-        </div>
-      </div>
-      <div className="relative z-0 mt-10 h-[500px] w-full bg-[url('/lg/bestPlace.avif')] bg-cover bg-no-repeat text-white sm:h-screen">
-        <div className="bg-lg-bg/4 absolute inset-0 flex justify-center">
-          <div className="flex max-w-[78rem] flex-col items-center justify-center gap-y-10 px-5 sm:px-7 md:px-10 xl:px-0">
-            <h2 className="text-2xl md:w-2/3 md:text-3xl lg:text-5xl lg:leading-[4rem]">
-              THE BEST PLACE TO REPAIR LG PRODUCTS{" "}
-            </h2>
-            <p>
-              Visit an LG Brandshop to shop a wide range of LG products and
-              receive expert advice.{" "}
-            </p>
-            <div className="flex max-w-56 flex-col gap-2  sm:max-w-96 sm:flex-row">
-              <LgCallButton />
-            </div>
-          </div>
         </div>
       </div>
     </div>
