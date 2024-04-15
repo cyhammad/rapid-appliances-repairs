@@ -1,24 +1,35 @@
-import Image from "next/image";
-import SamsungCallArrowButton from "../samsung/SamsungCallArrowButton";
-import SiemensArrowCallButton from "./SiemensArrowCallButton";
+"use client";
 
-const ServiceCard = ({ imageUrl, heading, description }) => {
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+const ServiceCard = ({ iconImgPath, heading, description, id }) => {
+  const router = useRouter();
   return (
-    <div className="flex max-w-[90rem]  flex-col items-center rounded-3xl bg-[#00183c] hover:bg-siemens-card-color">
-      <Image
-        className="max-w-52 transform object-fill p-2 transition-transform duration-300 hover:scale-110 md:h-[50%] "
-        src={imageUrl}
-        width={430}
-        height={200}
-        alt="image"
-      />
-      <div className="flex flex-col items-center justify-center  gap-y-5 px-2 pb-7 pt-5 text-center">
-        <h1 className="text-xl font-semibold">{heading}</h1>
-        <span className="max-w-[34rem] text-xs text-[#a3acbd]">
-          {description}
-        </span>
-        <SiemensArrowCallButton />
-      </div>
+    <div className="flex max-w-[300px] flex-col gap-y-5 border border-gray-400/60 p-10">
+      <button
+        className="group relative h-fit min-w-[20%]"
+        onClick={() => router.push("/service/" + id)}
+      >
+        <div className="absolute -bottom-3 -left-5 -z-10 h-12 w-12 rounded-full bg-yellow-400 duration-1000  group-hover:scale-125"></div>
+        <Image
+          src={iconImgPath}
+          width={70}
+          height={70}
+          alt="repair person icon"
+          className="transition-transform duration-1000 group-hover:scale-90"
+        />
+      </button>
+      <button
+        onClick={() => router.push("/service/" + id)}
+        className="mt-5 w-fit text-2xl font-bold transition-all duration-300 hover:text-yellow-400"
+      >
+        {heading}
+      </button>
+      <span className="leading-6">{description}</span>
+      <button className="w-fit font-bold uppercase text-blue-400">
+        call us +
+      </button>
     </div>
   );
 };

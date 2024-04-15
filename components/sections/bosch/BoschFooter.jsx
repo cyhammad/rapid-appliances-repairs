@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ const BoschFooter = () => {
     <footer className="flex justify-center bg-[#2D3033] text-white">
       <div className="top-75 absolute left-0 z-40 h-[0.35rem] w-full bg-[url('/bosch/shape_horizontal.svg')] bg-cover bg-center bg-no-repeat"></div>
       <div className="mt-5 flex w-full max-w-[78rem] flex-col gap-y-5 px-5 py-10">
-        <div className="flex   items-center gap-2">
+        <div className="flex items-center gap-2">
           <Link
             href="/services-centers/siemens"
             className="flex max-h-11 max-w-28 items-center"
@@ -16,7 +15,6 @@ const BoschFooter = () => {
           </Link>
           <h1 className="text-[20px] font-medium">Repair Center</h1>
         </div>
-
         <span className="text-sm font-light ">
           A company specializing in appliance repair and maintenance services in
           Dubai and Abu Dhabi of all the Bosch home appliances.

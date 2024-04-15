@@ -1,17 +1,18 @@
+import AboutSection from "@/components/sections/home/AboutSection";
+import MainBanner from "@/components/sections/home/MainBanner";
+import OurMissionSection from "@/components/sections/home/OurMissionSection";
+import QualitySection from "@/components/sections/home/QualitySection";
+import ServicesSection from "@/components/sections/home/ServicesSection";
 import LgBanner from "@/components/sections/lg/LgBanner";
-import LgServices from "@/components/sections/lg/LgServices";
-import LgAbout from "@/components/sections/lg/LgAbout";
-import LgCallButton from "@/components/sections/lg/LgCallButton";
-import LgWhatsappButton from "@/components/sections/lg/LgWhatsappButton";
-import LgCustomerService from "@/components/sections/lg/LgCustomerService";
 
 const LgServiceCenterPage = () => {
   return (
-    <div>
+    <div className="flex flex-col my-10">
       <LgBanner />
-      <LgAbout />
-      <LgCustomerService />
-      <LgServices />
+      <QualitySection />
+      <AboutSection />
+      <ServicesSection />
+      <OurMissionSection />
     </div>
   );
 };

@@ -1,67 +1,82 @@
-"use client";
-
 import Image from "next/image";
 import ServiceCard from "./ServiceCard";
 
 const SiemensServices = () => {
   return (
-    <div className="flex justify-center py-20">
-      <div className="flex max-w-[80rem] flex-col gap-y-10 px-5 sm:px-7 lg:px-5 ">
-        <div className="flex flex-col gap-y-5">
-          <h2 className="text-wrap text-2xl font-semibold sm:text-3xl  md:max-w-[25rem] md:text-4xl  md:leading-[3rem]">
-            Professional Services{" "}
-          </h2>
-          <span className="font-light">Our professional services include:</span>
+    <div className="flex justify-center">
+      <div className="flex w-full max-w-7xl flex-col gap-y-5 px-5 py-20">
+        <div className="flex items-center gap-x-1">
+          <Image src="/home/line.svg" width={25} height={25} alt="line" />
+          <span className="text-sm font-semibold uppercase">
+            Our Services
+          </span>
         </div>
-        <div className="ld:grid-cols-3 grid gap-10 sm:grid-cols-2 sm:px-5 xl:grid-cols-4 2xl:px-0">
+        <span className="text-[2.5rem] font-extrabold leading-[3.0rem]">
+          What We Do For Our Customers
+        </span>
+        <span className="font-light">
+          Through our commitment to organic growth, we continuously evolve our
+          approach to appliance repairs, staying agile in response to changing
+          market demands. By integrating disruptive innovations into our
+          practices, we deliver efficient and effective services that exceed
+          customer expectations.
+        </span>
+        <div className="mt-10 flex flex-wrap justify-center">
           <ServiceCard
-            imageUrl={"/samsung/washingMachine.avif"}
-            heading={"Washing Machine Repair"}
+            iconImgPath={"/home/repair-person.svg"}
+            heading={"Washing Machine"}
             description={
-              "Delivering top-tier, professional solutions that guarantee the optimal performance of your washing machine."
+              "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"washing-machine"}
           />
           <ServiceCard
-            imageUrl={"/samsung/ref.webp"}
-            heading={"Refrigerator Repair"}
+            iconImgPath={"/home/repair-person.svg"}
+            heading={"Dryer"}
             description={
-              "Whether it's a noisy compressor, a torn gasket, or a sealed door issue causing your refrigerator not to freeze properly."
+              "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"dryer"}
           />
           <ServiceCard
-            imageUrl={"/samsung/tv.webp"}
-            heading={"Television Repair"}
+            iconImgPath={"/home/repair-person.svg"}
+            heading={"Stove/Cooker"}
             description={
-              "Our professional TV repair service provides expert diagnostics and precise repairs ensuring optimal functionality."
+              "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"stove-cooker"}
           />
           <ServiceCard
-            imageUrl={"/samsung/stove.webp"}
-            heading={"Stove/Cooker Repair"}
+            iconImgPath={"/home/repair-person.svg"}
+            heading={"Refrigerator"}
             description={
-              "We offer fast and efficient repairs for all types of stoves and cookers. We only use high quality replacement part."
+              "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"refrigerator"}
           />
           <ServiceCard
-            imageUrl={"/samsung/dishwasher.avif"}
-            heading={"Dishwasher Repair"}
+            iconImgPath={"/home/repair-person.svg"}
+            heading={"Television"}
             description={
-              "We resolve common issues such as leaks, poor cleaning and unusual noises to ensure a spotless and efficient cleaning."
+              "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"television"}
           />
           <ServiceCard
-            imageUrl={"/samsung/oven.webp"}
-            heading={"Gas Oven Repair"}
+            iconImgPath={"/home/repair-person.svg"}
+            heading={"Gas Oven"}
             description={
-              "Issues like temperature inconsistencies, ignition problems, gas leaks are resolved by our professionals."
+              "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"gas-oven"}
           />
           <ServiceCard
-            imageUrl={"/samsung/washingMachine.avif"}
-            heading={"Dryer Repair"}
+            iconImgPath={"/home/repair-person.svg"}
+            heading={"Dishwasher"}
             description={
-              "Delivering top-tier, professional solutions that guarantee the optimal performance of your Dryer."
+              "In house repair experts with 10+ years of experience. We provide the best high quality repair services of your home"
             }
+            id={"dishwasher"}
           />
         </div>
       </div>

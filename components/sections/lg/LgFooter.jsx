@@ -1,19 +1,20 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
 const LgFooter = () => {
   return (
-    <div className="flex justify-center  ">
-      <footer className="flex w-full max-w-[87rem] text-[#707070] flex-col gap-y-5 px-5 pb-10">
-        <div className="flex mt-5  items-center gap-2">
+    <div className="flex justify-center">
+      <footer className="flex w-full max-w-7xl flex-col gap-y-5 px-5 pb-10 text-[#707070]">
+        <div className="mt-5 flex  items-center gap-2">
           <Link
             href="/services-centers/siemens"
             className="flex max-h-11 max-w-20 items-center"
           >
             {logo}
           </Link>
-          <h1 className="sm:text-[30px] text-[20px] font-bold">Repair Center</h1>
+          <h1 className="text-[20px] font-bold sm:text-[30px]">
+            Repair Center
+          </h1>
         </div>
 
         <span className="text-sm font-light ">
@@ -35,7 +36,7 @@ const LgFooter = () => {
   );
 };
 
-export default LgFooter
+export default LgFooter;
 const logo = (
   <svg
     width="225"
@@ -77,4 +78,3 @@ const logo = (
     </defs>
   </svg>
 );
-

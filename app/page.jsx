@@ -11,7 +11,7 @@ import FixedCallButtons from "@/components/buttons/FixCallButtons";
 
 export default function Home() {
   return (
-    <body className="flex flex-col ">
+    <body className="flex flex-col">
       <CallHeader />
       <Header />
       <MainBanner />

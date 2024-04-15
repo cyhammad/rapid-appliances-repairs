@@ -1,21 +1,20 @@
-import SiemensAboutSection from "@/components/sections/siemens/SiemensAboutSection";
+import AboutSection from "@/components/sections/home/AboutSection";
+import MainBanner from "@/components/sections/home/MainBanner";
+import OurMissionSection from "@/components/sections/home/OurMissionSection";
+import QualitySection from "@/components/sections/home/QualitySection";
+import ServicesSection from "@/components/sections/home/ServicesSection";
 import SiemensBanner from "@/components/sections/siemens/SiemensBanner";
-import SiemensCustomerService from "@/components/sections/siemens/SiemensCustomerService";
-import SiemensRepair from "@/components/sections/siemens/SiemensRepair";
 import SiemensServices from "@/components/sections/siemens/SiemensServices";
-import SiemensText from "@/components/sections/siemens/SiemensText";
-import React from "react";
 
 const SiemensServiceCenterPage = () => {
   return (
-    <>
+    <div className="my-24 flex flex-col">
       <SiemensBanner />
-      <SiemensAboutSection />
-      <SiemensText />
-      <SiemensCustomerService />
+      <QualitySection />
+      <AboutSection />
       <SiemensServices />
-      <SiemensRepair />
-    </>
+      <OurMissionSection />
+    </div>
   );
 };
 

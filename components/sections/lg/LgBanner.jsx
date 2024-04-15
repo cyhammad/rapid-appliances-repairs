@@ -1,33 +1,42 @@
-import LgFixedCallButton from "./LgFixedCallButton";
-import LgCallButton from "./LgCallButton";
-import LgWhatsappButton from "./LgWhatsappButton";
+import { Pacifico } from "next/font/google";
+import Image from "next/image";
+
+const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 
 const LgBanner = () => {
   return (
-    <div className="relative">
-      <div
-        className="absolute inset-0 bg-cover bg-fixed bg-no-repeat"
-        style={{ backgroundImage: `url('/lg/lg1.avif')` }}
-      ></div>
-      <div className="relative z-10 flex h-[530px] items-center justify-center sm:h-screen">
-        <div className="absolute inset-0 flex justify-center">
-          <div className="flex max-w-[78rem] flex-col justify-center gap-y-10 px-5 pt-16 sm:px-7 sm:pt-0 md:px-10 xl:px-0">
-            <h2 className="text-2xl text-white md:w-2/3 md:text-3xl lg:text-5xl lg:leading-[4rem]">
-              LG Service Center: Bringing you the best home appliance repair
-              services
-            </h2>
-            <span className="text-sm text-white sm:w-2/3 lg:leading-[1.75rem]">
-              With our extensive knowledge, expertise, and commitment to
-              customer satisfaction. We are dedicated to providing you with the
-              highest quality repairs
-            </span>
-            <div className="flex max-w-56 flex-col gap-2  sm:max-w-96 sm:flex-row">
-              <LgCallButton />
-              <LgWhatsappButton />
-            </div>
-          </div>
+    <div className="relative -z-20 flex justify-center overflow-hidden bg-yellow-200/20">
+      <div className="w-full max-w-7xl px-5 py-14 md:py-20">
+        <div className="flex flex-col gap-y-3 lg:max-w-[50%] xl:max-w-[550px]">
+          <span
+            className={`text-3xl font-extrabold text-gray-400 ${pacifico.className}`}
+          >
+            We Provide ...
+          </span>
+          <span className="text-6xl font-extrabold">
+            Home Appliances Repair Services
+          </span>
+          <span className="mt-5 text-3xl font-bold">
+            Same day service Guaranteed
+          </span>
+          <span className="font- mt-5 text-xl">
+            We provide the best appliance services in Dubai and Abu Dhabi from
+            Bosch, Samsung, LG and Siemens home appliances.
+          </span>
+          <button className="mt-10 w-fit rounded-full bg-blue-400 px-12 py-4 text-sm font-bold uppercase text-white transition-all duration-300 ease-in-out hover:bg-blue-950">
+            Hire us now
+          </button>
         </div>
       </div>
+      <div className="absolute left-5 top-44 -z-10 h-28 w-28 rounded-full bg-yellow-300/70"></div>
+      <div className="absolute -right-44 top-96 -z-10 h-80 w-80 rounded-full bg-blue-900/85 md:-left-44"></div>
+      <Image
+        src="/home/washing-machine-repair.png"
+        width={700}
+        height={1000}
+        alt="washing machine repair"
+        className="absolute right-0 top-0 z-0 hidden xl:block"
+      />
     </div>
   );
 };

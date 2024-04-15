@@ -11,7 +11,7 @@ const SiemensHeader = () => {
   const [header, setHeader] = useState(false);
 
   const scrollHeader = () => {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 0) {
       setHeader(true);
     } else {
       setHeader(false);
@@ -34,7 +34,7 @@ const SiemensHeader = () => {
     <header
       className={
         header
-          ? "fixed z-50 w-full flex items-center justify-center bg-siemens-bg"
+          ? "fixed z-50 flex w-full items-center justify-center bg-siemens-bg"
           : "fixed z-50 flex w-full items-center justify-center"
       }
     >
