@@ -28,6 +28,7 @@ const ServicesSection = () => {
             description={
               "Delivering top-tier, professional solutions that guarantee the optimal performance of your washing machine."
             }
+            id={"washing-machine"}
           />
           <ServiceCard
             imageUrl={"/samsung/ref.webp"}
@@ -35,6 +36,7 @@ const ServicesSection = () => {
             description={
               "Whether it's a noisy compressor, a torn gasket, or a sealed door issue causing your refrigerator not to freeze properly."
             }
+            id={"refrigerator"}
           />
           <ServiceCard
             imageUrl={"/samsung/tv.webp"}
@@ -42,6 +44,7 @@ const ServicesSection = () => {
             description={
               "Our professional TV repair service provides expert diagnostics and precise repairs ensuring optimal functionality."
             }
+            id={"television"}
           />
           <ServiceCard
             imageUrl={"/samsung/stove.webp"}
@@ -49,6 +52,7 @@ const ServicesSection = () => {
             description={
               "We offer fast and efficient repairs for all types of stoves and cookers. We only use high quality replacement part."
             }
+            id={"stove-cooker"}
           />
           <ServiceCard
             imageUrl={"/samsung/dishwasher.avif"}
@@ -56,6 +60,7 @@ const ServicesSection = () => {
             description={
               "We resolve common issues such as leaks, poor cleaning and unusual noises to ensure a spotless and efficient cleaning."
             }
+            id={"dishwasher"}
           />
           <ServiceCard
             imageUrl={"/samsung/oven.webp"}
@@ -63,6 +68,7 @@ const ServicesSection = () => {
             description={
               "Issues like temperature inconsistencies, ignition problems, gas leaks are resolved by our professionals."
             }
+            id={"gas-oven"}
           />
           <ServiceCard
             imageUrl={"/samsung/washingMachine.avif"}
@@ -70,6 +76,7 @@ const ServicesSection = () => {
             description={
               "Delivering top-tier, professional solutions that guarantee the optimal performance of your Dryer."
             }
+            id={"dryer"}
           />
         </div>
       </div>

@@ -1,20 +1,36 @@
+"use client";
+
 import Image from "next/image";
 import SamsungCallArrowButton from "../samsung/SamsungCallArrowButton";
-// import BoschCallArrowButton from "./BoschCallArrowButton";
+import { usePathname, useRouter } from "next/navigation";
 
-const ServiceCard = ({ imageUrl, heading, description }) => {
+const ServiceCard = ({ imageUrl, heading, description, id }) => {
+  const router = useRouter();
+  const pathname = usePathname();
+  console.log("pathname", pathname);
   return (
-    <div className="flex flex-col  items-center max-w-[50rem] bg-[#eff1f2] rounded-3xl hover:bg-[#c2c4c4]">
+    <div className="flex max-w-[50rem]  flex-col items-center rounded-3xl bg-[#eff1f2] hover:bg-[#c2c4c4]">
       <Image
-        className="max-w-52 transform object-fill transition-transform duration-300 p-2 hover:scale-110 md:h-[50%] "
+        className="max-w-52 transform object-fill p-2 transition-transform duration-300 hover:scale-110 md:h-[50%] "
         src={imageUrl}
         width={430}
         height={200}
         alt="image"
+        onClick={() => router.push(pathname + "/service/" + id)}
       />
-      <div className="flex flex-col justify-center text-center  items-center gap-y-5 px-2 pb-7 pt-5">
-        <h1 className="text-xl font-medium ">{heading}</h1>
-        <span className="text-xs max-w-72 ">{description}</span>
+      <div className="flex flex-col items-center justify-center  gap-y-5 px-2 pb-7 pt-5 text-center">
+        <h1
+          className="text-xl font-medium"
+          onClick={() => router.push(pathname + "/service/" + id)}
+        >
+          {heading}
+        </h1>
+        <span
+          className="max-w-72 text-xs"
+          onClick={() => router.push(pathname + "/service/" + id)}
+        >
+          {description}
+        </span>
         <SamsungCallArrowButton />
       </div>
     </div>
