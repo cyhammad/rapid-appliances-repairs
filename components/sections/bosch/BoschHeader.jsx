@@ -16,7 +16,6 @@ const BoschHeader = () => {
 
   return (
     <header className="fixed z-50 flex w-full items-center justify-center bg-white drop-shadow-sm  ">
-      <div className="absolute left-0 top-0 z-40 h-[0.35rem] w-full bg-[url('/bosch/shape_horizontal.svg')] bg-cover bg-center bg-no-repeat"></div>
       <div className=" flex h-20 w-full max-w-[78rem] items-center gap-12 px-5 sm:px-7 md:px-10 xl:px-0">
         <Link
           href="/services-centers/bosch"

@@ -5,7 +5,7 @@ const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 
 const SiemensBanner = () => {
   return (
-    <div className="relative -z-20 flex justify-center overflow-hidden">
+    <div className="relative -z-20 flex justify-center overflow-hidden bg-white text-black">
       <div className="w-full max-w-7xl px-5 py-14 md:py-20">
         <div className="flex flex-col gap-y-3 lg:max-w-[50%] xl:max-w-[550px]">
           <span
