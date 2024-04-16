@@ -16,8 +16,8 @@ const SamsungBannerCallButton = () => {
                 <Image
                   src="/images/phone.png"
                   className="max-w-xs ml-2 md:max-w-xl shadow-2xl"
-                  height={35}
-                  width={35}
+                  height={30}
+                  width={30}
                 />
               </button>
             </div>
