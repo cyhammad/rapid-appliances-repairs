@@ -20,7 +20,7 @@ const FixedCallButtons = () => {
         className="rounded-full border-none bg-green-500 p-1.5 hover:bg-green-600"
         onClick={() =>
           window.open(
-            `//api.whatsapp.com/send?phone=${phoneNumber}&text=Hey, I want Home Appliance Repair Service.`,
+            `//api.whatsapp.com/send?phone=${phoneNumber}&text=Hello! I'm in need of professional home appliance repair services and experts who can diagnose and fix.`,
           )
         }
       >
