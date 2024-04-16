@@ -106,7 +106,7 @@ const Header = () => {
                       onClick={() => setIsServicesOpen(!isServicesOpen)}
                       className={`flex items-center justify-between ${isServicesOpen ? "border-y" : "border-t"} border-white/20 px-2 py-3 font-medium hover:font-bold`}
                     >
-                      Services
+                      Service Centers
                       <motion.div
                         animate={{
                           rotate: isServicesOpen ? 180 : 0,
@@ -129,45 +129,27 @@ const Header = () => {
                             href="/"
                             className="flex justify-between px-2 py-3 font-medium hover:font-bold"
                           >
-                            Washing Machine Repair
+                            Samsung Service Center
                           </Link>
                           <Link
                             href="/"
                             className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
                           >
-                            Washing Machine Repair
+                            LG Service Center
                           </Link>
                           <Link
                             href="/"
                             className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
                           >
-                            Washing Machine Repair
+                            Siemens Service Center
                           </Link>
                           <Link
                             href="/"
                             className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
                           >
-                            Washing Machine Repair
+                            Bosch Service Center
                           </Link>
-                          <Link
-                            href="/"
-                            className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
-                          >
-                            Washing Machine Repair
-                          </Link>
-                          <Link
-                            href="/"
-                            className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
-                          >
-                            Washing Machine Repair
-                          </Link>
-                          <Link
-                            href="/"
-                            className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
-                          >
-                            Washing Machine Repair
-                          </Link>
-                        </motion.div>
+                                                  </motion.div>
                       )}
                     </AnimatePresence>
                     <Link
