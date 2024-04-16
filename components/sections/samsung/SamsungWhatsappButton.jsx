@@ -10,7 +10,7 @@ const SamsungWhatsappButton = () => {
               <button
                 className="px-5 py-4 flex justify-center flex-row bg-[#219ACD] text-white hover:bg-[#1984b1] rounded-xl duration-150 shadow-md"
                 onClick={() => {
-                  window.location.href = `//api.whatsapp.com/send?phone=${phoneNumber}&text=Hello! I'm in need of professional home appliance repair services. I'm looking for experts who can diagnose and fix the issue efficiently. `;
+                  window.location.href = `//api.whatsapp.com/send?phone=${phoneNumber}&text=Hello! I'm in need of professional home appliance repair services and experts who can diagnose and fix. `;
                 }}
               >
                 Whats App Us
