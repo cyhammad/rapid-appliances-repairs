@@ -12,7 +12,7 @@ const SamsungBannerCallButton = () => {
                 onClick={() => {
           window.location.href = `tel:${phoneNumber}`; }}
               >
-                Book Your Appointment
+                Call Us Now
                 <Image
                   src="/images/phone.png"
                   className="max-w-xs ml-2 md:max-w-xl shadow-2xl"

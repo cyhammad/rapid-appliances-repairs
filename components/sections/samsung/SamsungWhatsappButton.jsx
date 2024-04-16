@@ -13,7 +13,7 @@ const SamsungWhatsappButton = () => {
                   window.location.href = `//api.whatsapp.com/send?phone=${phoneNumber}&text=Hello! I'm in need of professional home appliance repair services. I'm looking for experts who can diagnose and fix the issue efficiently. `;
                 }}
               >
-                Book Your Appointment
+                Whats App Us
                 <Image
                   src="/images/whatsapp.png"
                   className="max-w-xs ml-2 md:max-w-xl shadow-2xl"
