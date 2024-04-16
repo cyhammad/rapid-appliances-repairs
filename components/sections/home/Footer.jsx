@@ -13,7 +13,7 @@ const Footer = () => {
 
         <span className="text-sm font-light ">
           An authorized service provider specialized in appliance repair and maintenance services in
-          Dubai and Abu Dhabi of all the Siemens home appliances.
+          Dubai and Abu Dhabi of all the home appliances.
         </span>
         <div className="flex flex-col gap-y-5 ">
           <span className="hover:underline">Home</span>
