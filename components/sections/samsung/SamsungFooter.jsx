@@ -18,8 +18,8 @@ const SamsungFooter = () => {
         </div>
 
         <span className="text-sm font-light ">
-          A company specializing in appliance repair and maintenance services in
-          Dubai and Abu Dhabi of all the Samsung home appliances.
+          An authorized service provider specialized in appliance repair and maintenance services in
+          Dubai and Abu Dhabi of all the Siemens home appliances.
         </span>
         <div className="flex flex-col gap-y-5 ">
           <span className="hover:underline">Home</span>
