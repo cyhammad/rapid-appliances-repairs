@@ -38,13 +38,25 @@ const ServicesSection = () => {
             }
             id={"refrigerator"}
           />
+          
+          
           <ServiceCard
-            imageUrl={"/samsung/tv.webp"}
-            heading={"Television Repair"}
+            imageUrl={"/samsung/dishwasher.avif"}
+            heading={"Dishwasher Repair"}
             description={
-              "Our professional TV repair service provides expert diagnostics and precise repairs ensuring optimal functionality."
+              "We resolve common issues such as leaks, poor cleaning and unusual noises to ensure a spotless and efficient cleaning."
             }
-            id={"television"}
+            id={"dishwasher"}
+          />
+          
+          <ServiceCard
+            imageUrl={"/samsung/washingMachine.avif"}
+            heading={"Dryer Repair"}
+            description={
+              "Delivering top-tier, professional solutions that guarantee the optimal performance of your Dryer."
+            }
+            id={"dryer"}
+
           />
           <ServiceCard
             imageUrl={"/samsung/stove.webp"}
@@ -55,12 +67,12 @@ const ServicesSection = () => {
             id={"stove-cooker"}
           />
           <ServiceCard
-            imageUrl={"/samsung/dishwasher.avif"}
-            heading={"Dishwasher Repair"}
+            imageUrl={"/samsung/tv.webp"}
+            heading={"Television Repair"}
             description={
-              "We resolve common issues such as leaks, poor cleaning and unusual noises to ensure a spotless and efficient cleaning."
+              "Our professional TV repair service provides expert diagnostics and precise repairs ensuring optimal functionality."
             }
-            id={"dishwasher"}
+            id={"television"}
           />
           <ServiceCard
             imageUrl={"/samsung/oven.webp"}
@@ -69,14 +81,6 @@ const ServicesSection = () => {
               "Issues like temperature inconsistencies, ignition problems, gas leaks are resolved by our professionals."
             }
             id={"gas-oven"}
-          />
-          <ServiceCard
-            imageUrl={"/samsung/washingMachine.avif"}
-            heading={"Dryer Repair"}
-            description={
-              "Delivering top-tier, professional solutions that guarantee the optimal performance of your Dryer."
-            }
-            id={"dryer"}
           />
         </div>
       </div>

@@ -1,15 +1,27 @@
 "use client";
 
 import { phoneNumber, phoneNumberShort } from "@/utils/phoneNumber";
+import Image from "next/image";
+
 
 const SamsungWhatsappButton = () => {
   return (
-    <button
-      className="flex w-fit min-w-[250px] items-center gap-2 rounded bg-blue-400 px-10 py-[0.85rem] text-sm font-medium text-white"
-      onClick={() => window.open(`https://wa.me/${phoneNumber}`)}
-    >
-      Whatsapp: {phoneNumberShort}
-    </button>
+   <div className="flex flex-col text-lg md:flex-row md:gap-x-10 md:justify-start md:px-0 justify-center gap-y-2 px-10">
+              <button
+                className="px-5 py-4 flex justify-center flex-row bg-[#219ACD] text-white hover:bg-[#1984b1] rounded-xl duration-150 shadow-md"
+                onClick={() => {
+                  window.location.href = `//api.whatsapp.com/send?phone=${phoneNumber}&text=Hello! I'm in need of professional home appliance repair services. I'm looking for experts who can diagnose and fix the issue efficiently. `;
+                }}
+              >
+                Book Your Appointment
+                <Image
+                  src="/images/whatsapp.png"
+                  className="max-w-xs ml-2 md:max-w-xl shadow-2xl"
+                  height={30}
+                  width={30}
+                />
+              </button>
+            </div>
   );
 };
 

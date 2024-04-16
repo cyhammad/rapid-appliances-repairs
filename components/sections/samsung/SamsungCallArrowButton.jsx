@@ -4,10 +4,10 @@ import { phoneNumber } from "@/utils/phoneNumber";
 const SamsungCallArrowButton = () => {
   return (
     <button
-      className="bg-blac bg-primary  hover:bg-primary-focus flex items-center justify-end gap-2 rounded bg-black px-6 py-2 text-white shadow-md duration-150"
+      className="bg-blac bg-primary  hover:bg-primary-focus flex items-center justify-end gap-2 font-extrabold rounded-xl bg-black px-8 py-4 text-white shadow-md duration-150"
       onClick={() => window.open(`tel:${phoneNumber}`)}
     >
-      Call
+      Call Us
     </button>
   );
 };

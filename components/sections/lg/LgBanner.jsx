@@ -16,16 +16,16 @@ const LgBanner = () => {
           <span
             className={`text-2xl font-extrabold text-gray-400 sm:text-3xl ${pacifico.className}`}
           >
-            We Provide ...
+            We are ...
           </span>
           <span className="text-5xl font-extrabold sm:text-6xl">
-            Authorized Bosch Appliances Repair Services
+            Authorized LG Service Center
           </span>
           <span className="mt-5 text-3xl font-bold">
             Same day service Guaranteed
           </span>
           <span className="mt-5 text-xl">
-            We provide the best appliance services in Dubai and Abu Dhabi from
+            We provide the best appliance services in Dubai and Abu Dhabi for
             Lg home appliances.
           </span>
           <div className="flex flex-col gap-2 sm:flex-row">
