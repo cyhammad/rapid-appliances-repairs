@@ -16,18 +16,15 @@ const ServiceCard = ({ imageUrl, heading, description, id }) => {
         width={430}
         height={200}
         alt="image"
-        onClick={() => router.push(pathname + "/service/" + id)}
       />
       <div className="flex flex-col items-center justify-center  gap-y-5 px-2 pb-7 pt-5 text-center">
         <h1
           className="text-xl font-medium"
-          onClick={() => router.push(pathname + "/service/" + id)}
         >
           {heading}
         </h1>
         <span
           className="max-w-72 text-xs"
-          onClick={() => router.push(pathname + "/service/" + id)}
         >
           {description}
         </span>
