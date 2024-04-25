@@ -26,10 +26,10 @@ export default function RootLayout({ children }) {
           gtag('js', new Date());
           gtag('config', 'AW-16532858519');
         ` }} />
-
+</head>
       
       {children}
-      </head>
+      
     </html>
   );
 }
