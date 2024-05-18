@@ -26,9 +26,29 @@ export default function RootLayout({ children }) {
           gtag('js', new Date());
           gtag('config', 'AW-16532858519');
         ` }} />
+        <Script type="text/javascript" async dangerouslySetInnerHTML={{ __html: `
+            var script = document.createElement('script');
+            script.async = true;
+            script.type = 'text/javascript';
+            var target = 'https://www.clickcease.com/monitor/stat.js';
+            script.src = target;
+            var elem = document.head;
+            elem.appendChild(script);
+          ` }} />
+
 </head>
+      <body className={inter.className}>
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGCK73CF" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
+          {/* <!--  ClickCease.com tracking--> */}
+          <a href="https://www.clickcease.com" rel="nofollow">
+            <img src="https://monitor.clickcease.com" alt="ClickCease" />
+          </a>
+          {/* <!--  ClickCease.com tracking--> */}
+        </noscript>
       
       {children}
+      </body>
       
     </html>
   );
