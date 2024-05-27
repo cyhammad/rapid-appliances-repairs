@@ -6,7 +6,7 @@ import LgServices from "@/components/sections/lg/LgServices";
 
 const LgServiceCenterPage = () => {
   return (
-    <div className="flex flex-col my-10">
+    <div className="flex flex-col">
       <LgBanner />
       <LgQualitySection />
       <AboutSection />

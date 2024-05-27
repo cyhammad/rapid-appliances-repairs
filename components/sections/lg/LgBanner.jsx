@@ -11,7 +11,7 @@ const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 const LgBanner = () => {
   return (
     <div className="relative flex justify-center overflow-hidden">
-      <div className="w-full max-w-7xl px-5 py-14 md:py-20">
+      <div className="w-full max-w-7xl px-5 py-24 md:py-20">
         <div className="flex flex-col gap-y-3 lg:max-w-[50%] xl:max-w-[550px]">
           <span
             className={`text-2xl font-extrabold text-gray-400 sm:text-3xl ${pacifico.className}`}

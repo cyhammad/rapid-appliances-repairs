@@ -6,7 +6,7 @@ import SamsungBanner from "@/components/sections/samsung/SamsungBanner";
 
 const SamsungServiceCenterPage = () => {
   return (
-    <div className="flex flex-col py-10">
+    <div className="flex flex-col ">
       <SamsungBanner />
       <QualitySection />
       <AboutSection />
