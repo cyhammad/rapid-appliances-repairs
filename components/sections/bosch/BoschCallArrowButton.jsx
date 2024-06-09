@@ -6,7 +6,11 @@ const BoschCallArrowButton = () => {
   return (
     <button
       className="flex justify-end items-center gap-2"
-      onClick={() => window.open(`tel:${phoneNumber}`)}
+      onClick={() => {
+          window.open(`tel:${phoneNumber}`);
+          gtag_report_conversion(`tel:${phoneNumber}`);
+        }}
+
     >
       <span className="text-lg font-bold">Call</span>
       {arrow}
