@@ -1,5 +1,7 @@
 import { Pacifico } from "next/font/google";
 import Image from "next/image";
+import SamsungBannerCallButton from "../samsung/SamsungBannerCallButton"; 
+import SamsungWhatsappButton from "../samsung/SamsungWhatsappButton";
 
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 
@@ -23,9 +25,10 @@ const MainBanner = () => {
             We provide the best appliance services in Dubai and Abu Dhabi from
             Bosch, Samsung, LG and Siemens home appliances.
           </span>
-          <button className="mt-10 w-fit rounded-full bg-blue-400 px-12 py-4 text-sm font-bold uppercase text-white transition-all duration-300 ease-in-out hover:bg-blue-950">
-            Hire us now
-          </button>
+        <div className="flex flex-col gap-2 sm:flex-row"> 
+          <SamsungBannerCallButton /> 
+          <SamsungWhatsappButton /> 
+        </div>
         </div>
       </div>
       <div className="absolute left-5 top-44 -z-10 h-28 w-28 rounded-full bg-yellow-300/70"></div>
