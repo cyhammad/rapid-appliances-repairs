@@ -56,11 +56,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGCK73CF" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
-          {/* <!--  ClickCease.com tracking--> */}
-          <a href="https://www.clickcease.com" rel="nofollow">
-            <img src="https://monitor.clickcease.com" alt="ClickCease" />
-          </a>
-          {/* <!--  ClickCease.com tracking--> */}
+         
         </noscript>
       
       {children}
