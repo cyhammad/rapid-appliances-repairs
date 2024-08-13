@@ -17,12 +17,17 @@ const BoschHeader = () => {
   return (
     <header className="fixed z-50 flex w-full items-center justify-center bg-white drop-shadow-sm  ">
       <div className=" flex h-20 w-full max-w-[78rem] items-center gap-12 px-5 sm:px-7 md:px-10 xl:px-0">
-        <Link
-          href="/services-centers/bosch"
-          className="flex max-h-11 max-w-28 items-center"
-        >
-          {logo}
-        </Link>
+        <div className="flex flex-col items-start">
+          <Link
+            href="/services-centers/bosch"
+            className="flex max-h-11 max-w-28 items-center"
+          >
+            {logo}
+          </Link>
+          <span className="text-xs text-gray-500">
+            By Adil Hussain Technical Services LLC
+          </span>
+        </div>
         <div className=" hidden cursor-pointer items-center justify-center gap-12 md:flex ">
           <h1 className="hover:color">
             <a>Home</a>

@@ -16,12 +16,17 @@ const SamsungHeader = () => {
   return (
     <header className="fixed z-50 flex w-full items-center justify-center bg-white drop-shadow-sm">
       <div className=" flex h-16 w-full max-w-[78rem] items-center gap-12 px-5 sm:px-7 md:px-10 xl:px-0">
-        <Link
-          href="/services-centers/samsung"
-          className="flex max-h-11 max-w-28 items-center"
-        >
-          {logo}
-        </Link>
+        <div className="flex flex-col items-start">
+          <Link
+            href="/services-centers/samsung"
+            className="flex max-h-11 max-w-28 items-center"
+          >
+            {logo}
+          </Link>
+          <span className="text-xs text-gray-500">
+            By Adil Hussain Technical Services LLC
+          </span>
+        </div>
         <div className="hidden w-full cursor-pointer items-center justify-center gap-12 md:flex ">
           <h1 className="hover:color">
             <Link href="/services-centers/samsung">Home</Link>
@@ -109,7 +114,7 @@ export default SamsungHeader;
 
 const logo = (
   <svg
-    class="icon"
+    className="icon"
     xmlns="http://www.w3.org/2000/svg"
     width="120"
     height="32"

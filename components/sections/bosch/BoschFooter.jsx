@@ -26,7 +26,7 @@ const BoschFooter = () => {
           <span className="hover:underline">Privacy Policy</span>
         </div>
         <span className="border-t border-[#c2c4c4] pt-5 text-center text-xs">
-          © 2024 Bosch Repair Center. All rights reserved.
+           By Adil Hussain Technical Services LLC.
         </span>
       </div>
     </footer>

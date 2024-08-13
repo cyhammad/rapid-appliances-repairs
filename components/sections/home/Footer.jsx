@@ -16,7 +16,7 @@ const BoschFooter = () => {
         </div>
         <span className="text-sm font-light ">
           An authorized service provider specialized in appliance repair and maintenance services in
-          Dubai and Abu Dhabi of all the bosch home appliances.
+          Dubai and Abu Dhabi of all the Bosch home appliances.
         </span>
         <div className="flex flex-col gap-y-5 ">
           <span className="hover:underline">Home</span>
@@ -25,6 +25,9 @@ const BoschFooter = () => {
           <span className="hover:underline">Terms of use</span>
           <span className="hover:underline">Privacy Policy</span>
         </div>
+        <span className="text-center text-sm font-light">
+          By Adil Hussain Technical Services LLC
+        </span>
         <span className="border-t border-[#c2c4c4] pt-5 text-center text-xs">
           © 2024 Bosch Repair Center. All rights reserved.
         </span>
@@ -34,4 +37,3 @@ const BoschFooter = () => {
 };
 
 export default BoschFooter;
-

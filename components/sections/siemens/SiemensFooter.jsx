@@ -18,7 +18,7 @@ const SiemensFooter = () => {
           <span className="underline">Privacy Policy</span>
         </div>
         <span className="border-t border-white/25 pt-5 text-center text-xs text-black/50">
-          © 2024 Siemens Repair Center. All rights reserved.
+         By Adil Hussain Technical Services LLC
         </span>
       </footer>
     </div>

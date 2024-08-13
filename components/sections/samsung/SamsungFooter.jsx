@@ -29,7 +29,7 @@ const SamsungFooter = () => {
           <span className="hover:underline">Privacy Policy</span>
         </div>
         <span className="border-t border-[#c2c4c4] pt-5 text-center text-xs">
-          © 2024 Samsung Repair Center. All rights reserved.
+          By Adil Hussain technical Services LLC.
         </span>
       </footer>
     </div>

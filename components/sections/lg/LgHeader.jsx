@@ -16,12 +16,17 @@ const LgHeader = () => {
   return (
     <header className="fixed z-50 flex w-full items-center justify-center bg-white text-lg-text drop-shadow-sm ">
       <div className=" flex h-20 w-full max-w-[93rem] items-center gap-12 px-5 sm:px-7 md:px-10 ">
-        <Link
-          href="/services-centers/siemens"
-          className="flex max-h-10 max-w-24 items-center"
-        >
-          {logo}
-        </Link>
+        <div className="flex flex-col items-start">
+          <Link
+            href="/services-centers/siemens"
+            className="flex max-h-10 max-w-24 items-center"
+          >
+            {logo}
+          </Link>
+          <span className="text-xs text-gray-500 mt-1">
+            By Adil Hussain Technical Services LLC
+          </span>
+        </div>
         <div className=" hidden cursor-pointer items-center justify-center gap-12 text-lg md:flex ">
           <h1 className="hover:color">
             <a>Home</a>
@@ -104,7 +109,6 @@ const LgHeader = () => {
     </header>
   );
 };
-
 const logo = (
   <svg
     width="225"

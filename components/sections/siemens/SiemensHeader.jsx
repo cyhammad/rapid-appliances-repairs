@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
@@ -34,17 +35,22 @@ const SiemensHeader = () => {
 
   return (
     <header className="fixed z-50 flex w-full items-center justify-center bg-white drop-shadow-sm text-black">
-      <div className=" flex h-20 w-full max-w-[78rem] items-center gap-12 px-5 sm:px-7 md:px-10 xl:px-0">
-        <Link href="/services-centers/siemens" className="flex items-center">
-          <Image
-            src="/logos/siemens-logo-white.svg"
-            width={130}
-            height={22}
-            alt="siemens logo"
-            quality={100}
-          />
-        </Link>
-        <div className=" hidden cursor-pointer items-center justify-center gap-12 md:flex ">
+      <div className="flex h-20 w-full max-w-[78rem] items-center gap-12 px-5 sm:px-7 md:px-10 xl:px-0">
+        <div className="flex flex-col items-start">
+          <Link href="/services-centers/siemens" className="flex items-center">
+            <Image
+              src="/logos/siemens-logo-white.svg"
+              width={130}
+              height={22}
+              alt="siemens logo"
+              quality={100}
+            />
+          </Link>
+          <span className="text-xs text-gray-500 mt-1">
+            By Adil Hussain Technical Services LLC
+          </span>
+        </div>
+        <div className="hidden cursor-pointer items-center justify-center gap-12 md:flex">
           <h1 className="hover:color">
             <a>Home</a>
           </h1>

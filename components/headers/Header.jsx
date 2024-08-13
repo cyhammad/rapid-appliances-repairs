@@ -19,6 +19,9 @@ const Header = () => {
             <span className="text-xs uppercase text-black/30">
               Appliances Repairs
             </span>
+            <span className="text-xs text-black/50">
+              By Adil Hussain Technical Services LLC
+            </span>
           </div>
         </div>
         {/* Medium and larger screens */}
@@ -77,6 +80,9 @@ const Header = () => {
                       <span className="text-xs uppercase text-white/30">
                         Appliances Repairs
                       </span>
+                      <span className="text-xs text-white/50">
+                        By Adil Hussain Technical Services LLC
+                      </span>
                     </div>
                   </div>
                   <button
@@ -126,30 +132,30 @@ const Header = () => {
                           transition={{ duration: 0.3 }}
                         >
                           <Link
-                            href="/"
+                            href="/services-centers/samsung"
                             className="flex justify-between px-2 py-3 font-medium hover:font-bold"
                           >
                             Samsung Service Center
                           </Link>
                           <Link
-                            href="/"
+                            href="/services-centers/lg"
                             className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
                           >
                             LG Service Center
                           </Link>
                           <Link
-                            href="/"
+                            href="/services-centers/siemens"
                             className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
                           >
                             Siemens Service Center
                           </Link>
                           <Link
-                            href="/"
+                            href="/services-centers/bosch"
                             className="flex justify-between border-t border-white/20 px-2 py-3 font-medium hover:font-bold"
                           >
                             Bosch Service Center
                           </Link>
-                                                  </motion.div>
+                        </motion.div>
                       )}
                     </AnimatePresence>
                     <Link
