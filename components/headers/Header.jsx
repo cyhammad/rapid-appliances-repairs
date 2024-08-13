@@ -61,9 +61,9 @@ const Header = () => {
         {/* Sidebar */}
         <AnimatePresence>
           {isOpen && (
-            <div className="absolute inset-0 left-0 top-0 flex md:hidden">
+            <div className="absolute inset-0 left-0 top-0 z-50 flex md:hidden">
               <motion.div
-                className="flex h-full min-w-80 max-w-[80vw] flex-col gap-y-5 bg-blue-950 p-5 text-white"
+                className="flex h-full w-full max-w-[75vw] flex-col gap-y-5 bg-blue-950 p-5 text-white"
                 initial={{ x: "-100%" }}
                 animate={{ x: 0 }}
                 exit={{ x: "-100%" }}
@@ -110,7 +110,9 @@ const Header = () => {
                     </Link>
                     <button
                       onClick={() => setIsServicesOpen(!isServicesOpen)}
-                      className={`flex items-center justify-between ${isServicesOpen ? "border-y" : "border-t"} border-white/20 px-2 py-3 font-medium hover:font-bold`}
+                      className={`flex items-center justify-between ${
+                        isServicesOpen ? "border-y" : "border-t"
+                      } border-white/20 px-2 py-3 font-medium hover:font-bold`}
                     >
                       Service Centers
                       <motion.div
@@ -196,7 +198,6 @@ const Header = () => {
     </div>
   );
 };
-
 const barsIcon = (
   <svg
     width="23"
