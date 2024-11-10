@@ -19,10 +19,7 @@ const Header = () => {
             <span className="text-xs uppercase text-black/30">
               Appliances Repairs
             </span>
-            <span className="text-xs text-black/50">
-              By Adil Hussain Technical Services LLC
-            </span>
-          </div>
+                      </div>
         </div>
         {/* Medium and larger screens */}
         <div className="hidden items-center gap-x-10 px-10 md:flex">
