@@ -24,9 +24,7 @@ const BoschHeader = () => {
           >
             {logo}
           </Link>
-          <span className="text-xs text-gray-500">
-            By Adil Hussain Technical Services LLC
-          </span>
+          
         </div>
         <div className=" hidden cursor-pointer items-center justify-center gap-12 md:flex ">
           <h1 className="hover:color">
