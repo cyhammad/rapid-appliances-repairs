@@ -23,9 +23,7 @@ const LgHeader = () => {
           >
             {logo}
           </Link>
-          <span className="text-xs text-gray-500 mt-1">
-            By Adil Hussain Technical Services LLC
-          </span>
+         
         </div>
         <div className=" hidden cursor-pointer items-center justify-center gap-12 text-lg md:flex ">
           <h1 className="hover:color">
