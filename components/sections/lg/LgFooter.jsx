@@ -28,9 +28,7 @@ const LgFooter = () => {
           <span className="hover:underline">Terms of use</span>
           <span className="hover:underline">Privacy Policy</span>
         </div>
-        <span className="border-t border-[#c2c4c4] pt-5 text-center text-xs">
-         By Adil Hussain Technical Services LLC.
-        </span>
+       
       </footer>
     </div>
   );
