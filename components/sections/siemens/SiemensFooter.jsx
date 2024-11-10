@@ -17,9 +17,7 @@ const SiemensFooter = () => {
           <span className="underline">Terms of use</span>
           <span className="underline">Privacy Policy</span>
         </div>
-        <span className="border-t border-white/25 pt-5 text-center text-xs text-black/50">
-         By Adil Hussain Technical Services LLC
-        </span>
+      
       </footer>
     </div>
   );
