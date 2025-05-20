@@ -13,11 +13,7 @@ const LgBanner = () => {
     <div className="relative flex justify-center overflow-hidden">
       <div className="w-full max-w-7xl px-5 py-24 md:py-20">
         <div className="flex flex-col gap-y-3 lg:max-w-[50%] xl:max-w-[550px]">
-          <span
-            className={`text-2xl font-extrabold text-gray-400 sm:text-3xl ${pacifico.className}`}
-          >
-            We are ...
-          </span>
+          
           <span className="text-5xl font-extrabold sm:text-6xl">
             Authorized LG Service Center
           </span>

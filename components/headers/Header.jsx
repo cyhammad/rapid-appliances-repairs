@@ -15,9 +15,9 @@ const Header = () => {
         <div className="flex items-center gap-x-1">
           <Image src="/logo.svg" width={50} height={50} alt="LOGO" />
           <div className="flex flex-col justify-between px-2">
-            <span className="text-3xl font-bold uppercase">Rapid</span>
+            <span className="text-3xl font-bold uppercase">Service</span>
             <span className="text-xs uppercase text-black/30">
-              Appliances Repairs
+              Center UAE
             </span>
                       </div>
         </div>
@@ -71,11 +71,11 @@ const Header = () => {
                   <div className="flex items-center gap-x-1">
                     <Image src="logo.svg" width={50} height={50} alt="LOGO" />
                     <div className="flex flex-col justify-between px-2">
-                      <span className="text-3xl font-bold uppercase text-white">
-                        Rapid
+                      <span className="text-xl font-bold uppercase text-white">
+                       Service
                       </span>
                       <span className="text-xs uppercase text-white/30">
-                        Appliances Repairs
+                        Center UAE
                       </span>
                       <span className="text-xs text-white/50">
                         By Adil Hussain Technical Services LLC
