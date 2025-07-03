@@ -3,7 +3,7 @@ import React from "react";
 
 const LgQualitySection = () => {
   return (
-    <div className="flex justify-center shadow-lg bg-white">
+    <div className="flex justify-center shadow-lg bg-white mt-12">
       <div className="flex w-full max-w-7xl flex-col gap-y-10 px-5 py-10 md:flex-row">
         <div className="flex w-full gap-x-9 px-5 md:max-w-[45%] md:border-r md:border-gray-300">
           <div className="group relative h-fit min-w-[20%]">

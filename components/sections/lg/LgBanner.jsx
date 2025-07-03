@@ -1,46 +1,74 @@
 "use client";
 
-import { phoneNumber } from "@/utils/phoneNumber";
-import { Pacifico } from "next/font/google";
-import Image from "next/image";
-import SamsungBannerCallButton from "../samsung/SamsungBannerCallButton";
-import SamsungWhatsappButton from "../samsung/SamsungWhatsappButton";
+import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { ImagesSlider } from "../../../app/ImagesSlider";
+import CallAndWhatsappButton from "../../buttons/CallAndWhatsappButton";
+import { cn } from "@/libs/utils";
 
-const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
+export function LgBanner({ company = "Appliance Services UAE" }) {
+  const images = ["/banner-1.jpeg", "/banner-2.jpeg", "/banner-3.jpeg"];
+  const [isImagesLoaded, setIsImagesLoaded] = useState(false);
 
-const LgBanner = () => {
+  useEffect(() => {
+    let loaded = 0;
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        loaded++;
+        if (loaded === images.length) setIsImagesLoaded(true);
+      };
+    });
+  }, []);
+
   return (
-    <div className="relative flex justify-center overflow-hidden">
-      <div className="w-full max-w-7xl px-5 py-24 md:py-20">
-        <div className="flex flex-col gap-y-3 lg:max-w-[50%] xl:max-w-[550px]">
-          
-          <span className="text-5xl font-extrabold sm:text-6xl">
-            Authorized LG Service Center
-          </span>
-          <span className="mt-5 text-3xl font-bold">
-            Same day service Guaranteed
-          </span>
-          <span className="mt-5 text-xl">
-            We provide the best appliance services in Dubai and Abu Dhabi for
-            Lg home appliances.
-          </span>
-          <div className="flex flex-col gap-2 sm:flex-row">
-            <SamsungBannerCallButton />
-            <SamsungWhatsappButton />
-          </div>
-        </div>
-      </div>
-      <div className="absolute left-5 top-44 -z-10 h-28 w-28 rounded-full bg-yellow-300/70"></div>
-      <div className="absolute -right-44 top-96 -z-10 h-80 w-80 rounded-full bg-blue-900/85 md:-left-44"></div>
-      <Image
-        src="/home/washing-machine-repair.png"
-        width={700}
-        height={1000}
-        alt="washing machine repair"
-        className="absolute right-0 top-0 z-0 hidden xl:block"
-      />
+    <div className="relative h-[40rem] w-full">
+      {/* Loader Overlay */}
+      {!isImagesLoaded && (
+        <motion.div
+          initial={{ opacity: 1 }}
+          animate={{ opacity: isImagesLoaded ? 0 : 1 }}
+          transition={{ duration: 0.5 }}
+          className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-90"
+        >
+          <div className="animate-spin rounded-full h-14 w-14 border-4 border-white border-t-transparent mb-4" />
+          <p className="text-white text-sm opacity-75 tracking-wide">
+            Hang On          </p>
+        </motion.div>
+      )}
+
+      <ImagesSlider
+        className={cn(
+          "h-full",
+          company === "Siemens" ? "mt-0" : "mt-[60px]"
+        )}
+        images={images}
+      >
+        {isImagesLoaded && (
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="z-50 flex flex-col justify-center items-center text-center px-4"
+          >
+            <motion.h1 className="font-extrabold text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 py-4 drop-shadow-lg">
+              Authorized {company} Service Center
+            </motion.h1>
+            <motion.p
+              className="max-w-4xl text-white/90 md:text-lg leading-relaxed mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              Get reliable and professional repair services with certified experts.
+              We restore your appliances quickly and effectively so your home stays
+              stress-free. Trusted by hundreds of families across the UAE.
+            </motion.p>
+            <CallAndWhatsappButton company={company} banner />
+          </motion.div>
+        )}
+      </ImagesSlider>
     </div>
   );
-};
-
-export default LgBanner;
+}
