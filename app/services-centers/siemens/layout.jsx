@@ -13,7 +13,7 @@ const SiemensLayout = ({ children }) => {
     <body className="flex flex-col text-black">
       <SiemensHeader />
       {children}
-      <SiemensFooter />
+      {/* <SiemensFooter /> */}
       <FixedCallButtons />
     </body>
   );

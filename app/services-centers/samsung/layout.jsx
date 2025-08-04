@@ -7,7 +7,7 @@ const SamsungLayout = ({children}) => {
     <body>
         <SamsungHeader />
         {children}
-        <SamsungFooter /> 
+        {/* <SamsungFooter />  */}
         <FixedCallButtons />
     </body>
   )
