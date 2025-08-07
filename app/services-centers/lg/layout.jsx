@@ -12,7 +12,7 @@ const Bosch = ({ children }) => {
     <body className="flex flex-col bg-lg-bg select-none">
       <LgHeader />
       {children}
-      {/* <LgFooter /> */}
+      <LgFooter />
       <FixedCallButtons />
     </body>
   );
