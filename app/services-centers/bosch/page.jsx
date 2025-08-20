@@ -6,7 +6,7 @@ import ServicesSection from "@/components/sections/home/ServicesSection";
 
 const BoschServiceCenterPage = () => {
   return (
-    <div className="flex flex-ol">
+    <div className="flex flex-col gap-16">
       <BoschBanner company="Bosch" />
       <QualitySection />
       <AboutSection />
